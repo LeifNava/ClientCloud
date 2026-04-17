@@ -10,12 +10,9 @@ import java.net.Socket;
 
 public class ClientCloud {
 
-    public static void main(String[] args) {
+     static void main(String[] args) {
 
         final String ipServer = "192.168.100.18";
-
-
-
 
         try {
             InetAddress ip = InetAddress.getByName(ipServer);

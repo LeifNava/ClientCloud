@@ -1,13 +1,16 @@
 package client;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+
 import java.io.DataInputStream;
 import java.io.IOException;
 
 
-public class Recibe implements   Runnable {
+public class Recibe implements Runnable {
     final private DataInputStream dis;
     final private Gson gson = new Gson();
+
 
     public Recibe(DataInputStream dis){
         this.dis = dis;
